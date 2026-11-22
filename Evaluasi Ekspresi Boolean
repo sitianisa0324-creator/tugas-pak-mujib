@@ -1,0 +1,9 @@
+int i = 5;
+int j = 6;
+boolean true_false;
+
+true_false = (j < 5);                  // false
+true_false = (j > 3);                  // true
+true_false = (j < 5 || true_false && j >= 4); // true  (karena true_false sebelumnya true dan j>=4 true)
+true_false = (!(i < 2 && j == 5));     // true  (i<2 salah, j==5 salah -> and bernilai false -> negasi !false = true)
+true_false = !true_false;              // false (membalikkan nilai true sebelumnya menjadi false)
